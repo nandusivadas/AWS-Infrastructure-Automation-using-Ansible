@@ -258,9 +258,11 @@ The repository contains the complete source code, Ansible playbooks, roles, inve
 
 ## 🔄 Repository Clone
 
-Successfully cloned the repository in the Hyderabad Region.
+Successfully cloned the GitHub repository in the AWS Hyderabad Region to recreate the automation environment.
 
-🔗 **Repository:**  
+The cloned repository contains the complete project source code, Ansible playbooks, roles, inventory, configuration files, and documentation required to deploy the infrastructure.
+
+### Clone Repository
 
 ```bash
 git clone https://github.com/nandusivadas/AWS-Infrastructure-Automation-using-Ansible
