@@ -124,7 +124,13 @@ Passwordless SSH connection established between Control Node and Client instance
 
 Configured inventory with Dev and Test groups.
 
-![](screenshots/04.png)
+```bash
+vi inventory
+```
+
+<p align="center">
+  <img src="screenshots/04.png" width="900">
+</p>
 
 
 
@@ -132,7 +138,13 @@ Configured inventory with Dev and Test groups.
 
 Configured Ansible to use the local inventory and disabled host key checking.
 
-![](screenshots/05.png)
+```bash
+vi ansible.cfg
+```
+
+<p align="center">
+  <img src="screenshots/05.png" width="900">
+</p>
 
 
 
@@ -140,9 +152,13 @@ Configured Ansible to use the local inventory and disabled host key checking.
 
 Verified connectivity using the Ansible Ping module.
 
-![](screenshots/06-ping.png)
+```bash
+ansible-navigator run ping.yml -m stdout
+```
 
-![](screenshots/07-ping-result.png)
+![](screenshots/06.png)
+
+![](screenshots/07.png)
 
 
 
@@ -150,9 +166,13 @@ Verified connectivity using the Ansible Ping module.
 
 Installed required packages using Ansible Playbooks.
 
-![](screenshots/08-packages.png)
+```bash
+ansible-navigator run packages.yml -m stdout
+```
 
-![](screenshots/09-packages-result.png)
+![](screenshots/08.png)
+
+![](screenshots/09.png)
 
 
 
@@ -160,13 +180,37 @@ Installed required packages using Ansible Playbooks.
 
 Executed Ansible Role for Apache installation and configuration.
 
-![](screenshots/10-role.png)
+```bash
+ansible-navigator run myrole.yml -m stdout
+```
+
+![](screenshots/10.png)
+
+## 📝 Issue File Configuration
+
+Updated the `/etc/issue` file with environment-specific content for the **dev** and **test** groups using Ansible.
+
+**Command**
+
+```bash
+ansible-navigator run issue.yml -m stdout
+```
+
+<p align="center">
+<img src="screenshots/08.png" width="900">
+</p>
+
+---
 
 
 
 ## 🌐 Apache Service Verification
 
 Verified Apache service status after deployment.
+
+```bash
+sudo systemctl status httpd
+```
 
 ![](screenshots/11.png)
 
@@ -176,6 +220,10 @@ Verified Apache service status after deployment.
 
 Created custom web directory and deployed index page.
 
+```bash
+ansible-navigator run custom.yml -m stdout
+```
+
 ![](screenshots/13.png)
 
 
@@ -184,6 +232,16 @@ Created custom web directory and deployed index page.
 
 Verified Apache service and webpage output.
 
+```bash
+ls -ld /var/www/html
+```
+```bash
+cat /webdev/index.html
+```
+```bash
+sudo systemctl status httpd
+```
+
 ![](screenshots/14.png)
 
 
@@ -191,6 +249,10 @@ Verified Apache service and webpage output.
 ## 📂 GitHub Repository
 
 Successfully pushed the project to GitHub.
+
+```bash
+git clone https://github.com/nandusivadas/AWS-Infrastructure-Automation-using-Ansible
+```
 
 ![](screenshots/15.png)
 
