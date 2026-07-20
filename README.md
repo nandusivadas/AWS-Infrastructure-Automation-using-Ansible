@@ -197,7 +197,7 @@ ansible-navigator run issue.yml -m stdout
 ```
 
 <p align="center">
-<img src="screenshots/08.png" width="900">
+<img src="screenshots/12.png" width="900">
 </p>
 
 ---
@@ -250,9 +250,6 @@ sudo systemctl status httpd
 
 Successfully pushed the project to GitHub.
 
-```bash
-git clone https://github.com/nandusivadas/AWS-Infrastructure-Automation-using-Ansible
-```
 
 ![](screenshots/15.png)
 
@@ -261,6 +258,10 @@ git clone https://github.com/nandusivadas/AWS-Infrastructure-Automation-using-An
 ## 🔄 Repository Clone
 
 Successfully cloned the repository in the Hyderabad Region.
+
+```bash
+git clone https://github.com/nandusivadas/AWS-Infrastructure-Automation-using-Ansible
+```
 
 ![](screenshots/16.png)
 
@@ -297,7 +298,6 @@ Apache website successfully deployed using reusable Ansible Roles.
 - Multi-Region Deployment
 
 
-
 # 🚀 Future Improvements
 
 - Dynamic Inventory
@@ -315,3 +315,4 @@ Apache website successfully deployed using reusable Ansible Roles.
 Cloud & DevOps Enthusiast
 
 GitHub: https://github.com/nandusivadas
+Linkedln: www.linkedin.com/in/nandu-sivadas98
