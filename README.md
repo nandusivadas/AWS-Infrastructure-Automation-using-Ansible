@@ -176,7 +176,7 @@ Verified Apache service status after deployment.
 
 Created custom web directory and deployed index page.
 
-![](screenshots/12.png)
+![](screenshots/13.png)
 
 
 
@@ -184,7 +184,7 @@ Created custom web directory and deployed index page.
 
 Verified Apache service and webpage output.
 
-![](screenshots/13.png)
+![](screenshots/14.png)
 
 
 
@@ -192,7 +192,7 @@ Verified Apache service and webpage output.
 
 Successfully pushed the project to GitHub.
 
-![](screenshots/14.png)
+![](screenshots/15.png)
 
 
 
@@ -200,7 +200,7 @@ Successfully pushed the project to GitHub.
 
 Successfully cloned the repository in the Hyderabad Region.
 
-![](screenshots/15.png)
+![](screenshots/16.png)
 
 
 
@@ -208,7 +208,7 @@ Successfully cloned the repository in the Hyderabad Region.
 
 Apache website successfully deployed using reusable Ansible Roles.
 
-![](screenshots/16.png)
+![](screenshots/17.png)
 
 
 
