@@ -248,8 +248,9 @@ sudo systemctl status httpd
 
 ## 📂 GitHub Repository
 
-Successfully pushed the project to GitHub.
+Successfully pushed the project to GitHub, making it accessible for version control, collaboration, and future updates.
 
+The repository contains the complete source code, Ansible playbooks, roles, inventory, configuration files, screenshots, and project documentation.
 
 ![](screenshots/15.png)
 
@@ -258,6 +259,7 @@ Successfully pushed the project to GitHub.
 ## 🔄 Repository Clone
 
 Successfully cloned the repository in the Hyderabad Region.
+
 
 ```bash
 git clone https://github.com/nandusivadas/AWS-Infrastructure-Automation-using-Ansible
