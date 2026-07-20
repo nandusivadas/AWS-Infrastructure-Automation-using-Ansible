@@ -1,270 +1,264 @@
-# AWS-Infrastructure-Automation-with-Ansible
+<div align="center">
 
-![AWS](https://img.shields.io/badge/AWS-EC2-orange)
-![Ansible](https://img.shields.io/badge/Ansible-Automation-red)
-![Linux](https://img.shields.io/badge/Linux-Amazon%20Linux-blue)
-![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED)
-![Git](https://img.shields.io/badge/Git-Version%20Control-F05032)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-181717)
+# 🚀 AWS Infrastructure Automation using Ansible
 
-##  Project Overview
+### Automating AWS EC2 Infrastructure Deployment with Ansible & Docker
 
-This project demonstrates Infrastructure Automation using Ansible across two AWS regions. In Mission 1, a control node was configured in the Mumbai region to manage multiple Linux client nodes using Ansible Playbooks, Roles, and passwordless SSH. The automation project was version-controlled using Git and pushed to GitHub. In Mission 2, the same repository was cloned in the Hyderabad region, where the playbooks were executed again to recreate the infrastructure and deploy the web server without manual configuration. This project highlights Infrastructure as Code (IaC), configuration management, and reusable automation across different environments.
+<p>
+<img src="https://img.shields.io/badge/AWS-EC2-orange?style=for-the-badge&logo=amazonaws">
+<img src="https://img.shields.io/badge/Automation-Ansible-red?style=for-the-badge&logo=ansible">
+<img src="https://img.shields.io/badge/Platform-Amazon%20Linux%202023-yellow?style=for-the-badge&logo=amazonlinux">
+<img src="https://img.shields.io/badge/Container-Docker-blue?style=for-the-badge&logo=docker">
+<img src="https://img.shields.io/badge/Version%20Control-Git-black?style=for-the-badge&logo=git">
+</p>
+
+**Infrastructure Automation • Configuration Management • AWS • DevOps**
+
+</div>
+
+
+# 📖 Project Overview
+
+This project demonstrates how to automate the deployment and configuration of multiple AWS EC2 instances using **Ansible**. The automation includes infrastructure provisioning, passwordless SSH authentication, package installation, Apache web server deployment, reusable Ansible Roles, and infrastructure recreation in another AWS Region using GitHub.
+
+The project is divided into two missions:
+
+- **Mission 1** – Build and automate a complete Ansible environment.
+- **Mission 2** – Recreate the same infrastructure in a new AWS Region using the existing Git repository.
 
 
 
-## 🏗️ Architecture Diagram
+# 🎯 Objectives
 
-> **Insert your Architecture Diagram screenshot here (Page 1)**
+- Deploy AWS EC2 infrastructure
+- Configure passwordless SSH authentication
+- Install Docker and Ansible Navigator
+- Create reusable Ansible Playbooks
+- Build reusable Ansible Roles
+- Deploy Apache automatically
+- Store the project in GitHub
+- Clone and recreate the environment in another AWS Region
+
+
+
+# 🏗️ Architecture Diagram
 
 ![Architecture Diagram](screenshots/01.png)
 
 
 
-## 🛠️ Technologies Used
+# ⚙️ Technologies Used
 
-- AWS EC2
-- Amazon Linux 2023
-- Ansible
-- Ansible Navigator
-- Docker
-- Apache HTTP Server
-- Git
-- GitHub
-- SSH
-- Linux Administration
-- Jinja2 Templates
-
-
-
-## ✨ Key Features
-
-- Automated multi-server configuration using Ansible Playbooks
-- Passwordless SSH authentication between control and managed nodes
-- Inventory-based host management
-- Automated package installation
-- Apache Web Server deployment using Ansible Roles
-- Dynamic web page generation using Jinja2 Templates
-- Configuration management using Playbooks
-- Git-based version control
-- Infrastructure recreation by cloning the Git repository in a different AWS region
+| Technology | Purpose |
+|------------|---------|
+| AWS EC2 | Cloud Infrastructure |
+| Amazon Linux 2023 | Operating System |
+| Ansible | Configuration Management |
+| Ansible Navigator | Playbook Execution |
+| Docker | Execution Environment |
+| SSH | Secure Communication |
+| Apache HTTP Server | Web Server |
+| Git | Version Control |
+| GitHub | Source Code Repository |
 
 
 
-## 🔄 Project Workflow
+# ✨ Key Features
 
-1. Launch AWS EC2 instances
-2. Configure passwordless SSH
-3. Install Docker and Ansible Navigator
-4. Configure Inventory and ansible.cfg
-5. Create and execute Ansible Playbooks
-6. Deploy Apache Web Server using Roles
-7. Verify successful deployment
-8. Push automation project to GitHub
-9. Clone the repository in another AWS Region
-10. Re-execute playbooks to recreate the infrastructure
-
+- Infrastructure automation using Ansible
+- Passwordless SSH configuration
+- Inventory management
+- Docker-based Ansible execution
+- Apache deployment using Roles
+- Jinja2 templates
+- Git-based infrastructure recreation
+- Multi-region deployment
+- Automated server configuration
 
 
-## 📁 Project Structure
+
+# 📂 Repository Structure
 
 ```text
-ansible/
-├── inventory
-├── ansible.cfg
-├── packages.yml
-├── myrole.yml
-├── issue.yml
-├── custom.yml
+AWS-Infrastructure-Automation-using-Ansible
+│
+├── architecture/
+├── docs/
+├── inventory/
+├── playbooks/
 ├── roles/
-│   └── myrole/
-│       ├── tasks/
-│       ├── templates/
-│       ├── handlers/
-│       ├── vars/
-│       └── defaults/
+├── templates/
+├── screenshots/
+├── ansible.cfg
 └── README.md
 ```
 
 
 
-# 📷 Screenshots
+# 🔄 Workflow
 
-## 1️⃣ AWS Infrastructure
+```text
+Launch EC2 Instances
+        │
+        ▼
+Create Users
+        │
+        ▼
+Configure SSH Keys
+        │
+        ▼
+Install Docker
+        │
+        ▼
+Install Ansible Navigator
+        │
+        ▼
+Configure Inventory
+        │
+        ▼
+Execute Playbooks
+        │
+        ▼
+Deploy Apache
+        │
+        ▼
+Push to GitHub
+        │
+        ▼
+Clone Repository
+        │
+        ▼
+Recreate Infrastructure
+```
 
-> Launching EC2 Control Node and Client Nodes
+
+
+# 🚀 Project Workflow
+
+## Mission 1
+
+- Launch AWS EC2 instances
+- Configure the Control Node
+- Configure Client Nodes
+- Install Docker
+- Install Ansible Navigator
+- Configure Inventory
+- Create Playbooks
+- Create Roles
+- Deploy Apache
+- Push project to GitHub
+
+
+
+## Mission 2
+
+- Launch a new AWS environment
+- Clone the GitHub repository
+- Update inventory
+- Verify SSH connectivity
+- Execute Ansible Playbooks
+- Verify successful deployment
+
+
+
+
+# 📸 Project Screenshots
+
+### ☁️ AWS Infrastructure
+
+Launched the AWS EC2 Control Node and Managed Nodes required for the automation environment. The infrastructure consists of one Control Node and two Client Nodes running in the Mumbai Region.
 
 ![AWS Infrastructure](screenshots/02.png)
 
 
 
-## 2️⃣ SSH Key Authentication
+### 🔑 Passwordless SSH Authentication
+Verifies successful SSH connectivity between the control node and managed nodes.
 
-> Passwordless SSH communication between Control Node and Client Nodes
-
-<p align="center">
-<img src="screenshots/03.png" width="1000">
-</p>
+![SSH Authentication](screenshots/03.png)
 
 
 
-## 3️⃣ Ansible Inventory Configuration
+### 📋 Ansible Inventory Configuration
+Static inventory configured for managing AWS EC2 instances.
 
-> Inventory file and ansible.cfg configuration
-
-<p align="center">
-<img src="screenshots/04.png" width="1000">
-</p>
-
-<p align="center">
-<img src="screenshots/04.png" width="1000">
-</p>
+![Inventory Configuration](screenshots/03.png)
 
 
 
-## 4️⃣ Playbook Execution
+### ✅ Ansible Connectivity Test
+Successful `ansible all -m ping` verification.
 
-### Connectivity Verification
-
-Successfully verified connectivity between the control node and all managed nodes.
-
-![Ping Playbook](screenshots/06.png)
-![Ping Playbook](screenshots/07.png)
-
-### Package Installation
-
-Installed required software packages automatically.
-
-![Packages Playbook](screenshots/08.png)
-![Packages Playbook](screenshots/09.png)
-
-### Apache Deployment Using Roles
-
-Deployed and configured Apache Web Server using reusable Ansible Roles.
-
-![Apache Role](screenshots/10.png)
-
-### Issue File Configuration
-
-Configure the custom /etc/issue banner.
-
-![Issue Playbook](screenshots/12.png)
-
-### Custom Web Configuration
-
-Created a custom web directory and deployed the application.
-
-![Custom Configuration](screenshots/13.png)
+![Ansible Connectivity](screenshots/04.png)
 
 
 
-## 5️⃣ Deployment Verification
+### 🌐 Apache Web Server Deployment
+Apache installed and configured automatically using Ansible.
 
-### Apache Service Status
-
-Verified that the Apache HTTP service is active and running.
-
-![Apache Status](screenshots/11.png)
-
-
-## 5️⃣ GitHub Repository
-
-> Project successfully pushed to GitHub
-
-![GitHub Repository](screenshots/15.png)
+![Apache Deployment](screenshots/05.png)
 
 
 
+### 🖥️ Web Server Verification
+Default Apache web page successfully served from the managed node.
 
-## 6️⃣ Final Web Server Output
-
-> Apache Web Server successfully deployed
-
-![Final Web Server Output](screenshots/17.png)
+![Web Server Output](screenshots/06.png)
 
 
 
-## 🚀 How to Run
+### 🚀 Mission 2 Infrastructure Recreation
+Infrastructure recreated successfully in a new AWS Region using the cloned GitHub repository and Ansible playbooks.
 
-### Clone Repository
-
-```bash
-git clone https://github.com/nandusivadas/AWS-Infrastructure-Automation-with-Ansible.git
-```
-
-### Navigate to Project
-
-```bash
-cd AWS-Infrastructure-Automation-with-Ansible
-```
-
-### Verify Inventory
-
-```bash
-cat inventory
-```
-
-### Execute Package Installation
-
-```bash
-ansible-navigator run packages.yml
-```
-
-### Execute Apache Role
-
-```bash
-ansible-navigator run myrole.yml
-```
-
-### Execute Issue Configuration
-
-```bash
-ansible-navigator run issue.yml
-```
-
-### Execute Custom Web Configuration
-
-```bash
-ansible-navigator run custom.yml
-```
+![Mission 2 Deployment](screenshots/07.png)
 
 
 
-## ✅ Skills Demonstrated
+# 📚 Skills Demonstrated
 
 - AWS EC2
-- Amazon Linux Administration
-- Infrastructure Automation
+- Amazon Linux
+- Linux Administration
+- Docker
 - Ansible
 - Ansible Navigator
-- Docker
-- SSH Key Authentication
-- Apache HTTP Server
-- Jinja2 Templates
-- Configuration Management
+- SSH Authentication
+- Infrastructure Automation
+- Apache Administration
 - Git & GitHub
-- Linux System Administration
 
 
 
-## 📖 Documentation
+# 📄 Documentation
 
-Detailed project documentation is available in the repository.
-
-📄 **AWS-Infrastructure-Automation-with-Ansible**
+Complete project documentation is available in the **docs/** directory.
 
 
 
-## 📌 Project Outcome
+# 🎯 Learning Outcomes
 
-Successfully automated Linux server configuration using Ansible, deployed Apache web servers through reusable playbooks and roles, and demonstrated Infrastructure as Code (IaC) by recreating the environment in another AWS region using the same automation project.
+- Automated AWS infrastructure deployment
+- Reduced manual server configuration
+- Implemented Infrastructure as Code
+- Reused automation across AWS Regions
+- Improved deployment consistency
+- Built reusable Ansible Roles and Playbooks
 
 
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Nandu Sivadas**
+## Nandu Sivadas
 
-Cloud & DevOps Enthusiast
+**Cloud & DevOps Enthusiast**
 
-LinkedIn: *www.linkedin.com/in/nandu-sivadas-556264396*
+- GitHub: https://github.com/nandusivadas
+- LinkedIn: *(Add your LinkedIn profile)*
+
+---
+
+<div align="center">
+
+⭐ If you like this project, don't forget to star the repository.
+
+</div>
