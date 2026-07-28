@@ -311,7 +311,7 @@ Apache website successfully deployed using reusable Ansible Roles.
 - Terraform Automation
 - AWS Systems Manager Integration
 
----
+
 
 # 👨‍💻 Author
 
@@ -319,8 +319,10 @@ Apache website successfully deployed using reusable Ansible Roles.
 
 Cloud & DevOps Enthusiast
 
-GitHub: https://github.com/nandusivadas
+📧 Email: nandusivadas98@gmail.com
 
-Email id: nandusivadas98@gmail.com
+🔗 LinkedIn: https://linkedin.com/in/nandusivadas98
 
-Linkedln: www.linkedin.com/in/nandu-sivadas98
+🐙 GitHub: https://github.com/nandusivadas
+
+🌐 Portfolio: https://nandusivadas.github.io/Portfolio/
